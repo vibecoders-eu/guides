@@ -1,9 +1,47 @@
 MARKDOWN FORMATTING GUIDE FOR VIBECODERS CONTRIBUTORS
 
-Markdown is a simple way to format plain text so it can be easily converted to HTML for display on websites like Vibecoders.eu. It's designed to be readable even in its raw form. Here’s how to use the essential elements for writing your guides in `.md` files:
+This guide explains how to format your `.md` guide files for Vibecoders.eu, including the required YAML front matter and standard Markdown syntax.
 
+--------------------------------------------------
 
-1. HEADINGS
+1. YAML FRONT MATTER (REQUIRED AT TOP OF .md FILE)
+
+Every guide submitted as a `.md` file *must* begin with a block of YAML front matter. This block starts with a line containing only three hyphens (`---`) and ends with another line containing only three hyphens (`---`). Inside this block, you provide structured metadata about your guide using `key: value` pairs.
+
+Purpose: This metadata is essential for Vibecoders.eu to display, categorize, and filter guides correctly.
+
+Required Fields (Must be included):
+* title: The main title of your guide (e.g., `title: "Deploying Remix with Docker"`)
+* author_github: Your GitHub username (e.g., `author_github: "sebastyijan-fi"`)
+* description: A short summary for previews (e.g., `description: "Learn how to containerize and deploy..."`)
+
+Recommended Fields (Include if applicable):
+* tags: A list of keywords in square brackets (e.g., `tags: ["docker", "remix", "deployment"]`)
+* level: Difficulty, like `beginner`, `intermediate`, or `advanced` (e.g., `level: "intermediate"`)
+* related_tools: List of tool slugs from Vibecoders (e.g., `related_tools: ["docker", "remix", "fly-io"]`)
+* vibecoders_stack_url: URL to a relevant stack on Vibecoders.eu (e.g., `vibecoders_stack_url: "https://vibecoders.eu/stack/..."`)
+* published_date: Original publication date in YYYY-MM-DD format (e.g., `published_date: "2025-03-28"`)
+
+Example Structure (at the very top of your .md file):
+
+  ---
+  title: "Example Guide Title"
+  author_github: "your-username"
+  description: "This is a short description."
+  tags: ["example", "tutorial"]
+  level: "beginner"
+  related_tools: ["tool-slug"]
+  vibecoders_stack_url: ""
+  published_date: "2025-03-28"
+  ---
+
+(Your actual Markdown guide content, described below, starts AFTER this second `---` line)
+
+--------------------------------------------------
+
+Now, here's how to format the Markdown content itself:
+
+2. HEADINGS
 
 Use hash symbols (#) at the beginning of a line in your .md file. More hashes mean a smaller heading level.
 
@@ -18,7 +56,7 @@ Example Syntax (in your .md file):
     More text.
 
 
-2. PARAGRAPHS
+3. PARAGRAPHS
 
 Simply type your text. Separate paragraphs with a blank line.
 
@@ -29,7 +67,7 @@ Example Syntax (in your .md file):
     This is the second paragraph. The blank line above separates it.
 
 
-3. EMPHASIS (BOLD & ITALIC)
+4. EMPHASIS (BOLD & ITALIC)
 
 Use two asterisks (*bold*) or two underscores (__bold__) around text for bold.
 Use one asterisk (*italic*) or one underscore (_italic_) around text for italic.
@@ -41,7 +79,7 @@ Example Syntax (in your .md file):
 (This would render with actual bold and italic text on the website).
 
 
-4. LISTS
+5. LISTS
 
 Unordered Lists (Bullets):
 Use asterisks (*), hyphens (-), or plus signs (+) at the beginning of a line, followed by a space. Indent items with spaces to create nested lists.
@@ -66,7 +104,7 @@ Example Syntax (in your .md file):
     3. Run the application.
 
 
-5. LINKS
+6. LINKS
 
 Use square brackets [] for the link text and parentheses () for the URL.
 
@@ -77,7 +115,7 @@ Example Syntax (in your .md file):
 (This would render as clickable links on the website).
 
 
-6. INLINE CODE
+7. INLINE CODE
 
 Use single backticks (`) around code snippets, commands, filenames, or variable names within a sentence.
 
@@ -88,7 +126,7 @@ Example Syntax (in your .md file):
 (This would render with `npm install`, `config.js`, and `apiKey` visually distinct, often in a monospace font).
 
 
-7. CODE BLOCKS (FENCED)
+8. CODE BLOCKS (FENCED)
 
 Use triple backticks (```) on lines before and after your code block in the .md file. Specify the language (like bash, javascript, json, yaml, html, etc.) right after the opening backticks for syntax highlighting on Vibecoders.eu.
 
@@ -113,7 +151,7 @@ Example Syntax (in your .md file):
     ```
 
 
-8. IMAGES
+9. IMAGES
 
 Embed images using ![Alt text](URL).
 
@@ -125,7 +163,7 @@ Example Syntax (in your .md file):
     ![Screenshot showing the final dashboard view with data](https://your-image-host.com/dashboard-final.png)
 
 
-9. VIDEOS (USING HTML EMBED)
+10. VIDEOS (USING HTML EMBED)
 
 Standard Markdown doesn't embed video players. Paste the HTML <iframe> embed code provided by video platforms like YouTube or Vimeo directly into your Markdown file.
 
@@ -144,7 +182,7 @@ Example Syntax (in your .md file, using generic iframe structure - get actual co
     </div>
 
 
-10. BLOCKQUOTES
+11. BLOCKQUOTES
 
 Use the greater-than symbol (>) at the beginning of a line.
 
@@ -156,7 +194,7 @@ Example Syntax (in your .md file):
 (This would render visually indented or distinct on the website).
 
 
-11. HORIZONTAL RULES
+12. HORIZONTAL RULES
 
 Create a horizontal line using three or more hyphens (---), asterisks (***), or underscores (___) on a line by themselves.
 
@@ -170,4 +208,6 @@ Example Syntax (in your .md file):
 
 --------------------------------------------------
 
-This covers the most common Markdown formatting. Remember to also consult the main CONTRIBUTING.md file for rules about content scope, front matter, and the submission process!
+This covers the most common formatting. Remember to also consult the main CONTRIBUTING.md file for rules about content scope, the exact front matter fields, and the submission process!
+
+(Context: Helsinki, Finland - Friday, March 28, 2025 at 12:48 PM)
