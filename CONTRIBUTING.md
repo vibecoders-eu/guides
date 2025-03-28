@@ -134,7 +134,3 @@ Use standard Markdown and appropriate HTML (for embeds) for readability:
 ## Licensing
 
 By submitting content via a Pull Request, you agree to license your contribution (the text, code examples, and front matter in the `.md` file) under the terms specified in the [LICENSE](LICENSE) file (e.g., CC-BY-SA 4.0).
-
-## Code of Conduct
-
-(Consider adding a `CODE_OF_CONDUCT.md` file and linking it here).
