@@ -1,0 +1,173 @@
+MARKDOWN FORMATTING GUIDE FOR VIBECODERS CONTRIBUTORS
+
+Markdown is a simple way to format plain text so it can be easily converted to HTML for display on websites like Vibecoders.eu. It's designed to be readable even in its raw form. Here’s how to use the essential elements for writing your guides in `.md` files:
+
+
+1. HEADINGS
+
+Use hash symbols (#) at the beginning of a line in your .md file. More hashes mean a smaller heading level.
+
+Example Syntax (in your .md file):
+
+    ## This is a Main Section (H2)
+
+    Some text here.
+
+    ### This is a Sub-Section (H3)
+
+    More text.
+
+
+2. PARAGRAPHS
+
+Simply type your text. Separate paragraphs with a blank line.
+
+Example Syntax (in your .md file):
+
+    This is the first paragraph. It can contain multiple sentences.
+
+    This is the second paragraph. The blank line above separates it.
+
+
+3. EMPHASIS (BOLD & ITALIC)
+
+Use two asterisks (*bold*) or two underscores (__bold__) around text for bold.
+Use one asterisk (*italic*) or one underscore (_italic_) around text for italic.
+
+Example Syntax (in your .md file):
+
+    Make sure to use the **correct version**. This step is _very important_.
+
+(This would render with actual bold and italic text on the website).
+
+
+4. LISTS
+
+Unordered Lists (Bullets):
+Use asterisks (*), hyphens (-), or plus signs (+) at the beginning of a line, followed by a space. Indent items with spaces to create nested lists.
+
+Example Syntax (in your .md file):
+
+    * First item
+    * Second item
+      - Nested item A
+      - Nested item B
+    + Third main item
+
+Ordered Lists (Numbers):
+Use numbers followed by a period (.) at the beginning of a line, followed by a space.
+
+Example Syntax (in your .md file):
+
+    1. Install the software.
+    2. Configure the settings.
+       1. Configure setting X.
+       2. Configure setting Y.
+    3. Run the application.
+
+
+5. LINKS
+
+Use square brackets [] for the link text and parentheses () for the URL.
+
+Example Syntax (in your .md file):
+
+    Visit [Vibecoders Showcase](https://vibecoders.eu/showcase) or read the [official documentation](https://example-docs.com).
+
+(This would render as clickable links on the website).
+
+
+6. INLINE CODE
+
+Use single backticks (`) around code snippets, commands, filenames, or variable names within a sentence.
+
+Example Syntax (in your .md file):
+
+    First, run `npm install`. Then, edit the `config.js` file and set the `apiKey` variable.
+
+(This would render with `npm install`, `config.js`, and `apiKey` visually distinct, often in a monospace font).
+
+
+7. CODE BLOCKS (FENCED)
+
+Use triple backticks (```) on lines before and after your code block in the .md file. Specify the language (like bash, javascript, json, yaml, html, etc.) right after the opening backticks for syntax highlighting on Vibecoders.eu.
+
+Example Syntax (in your .md file):
+
+    ```javascript
+    // Add comments within your code normally
+    function calculateTotal(price, taxRate) {
+      return price * (1 + taxRate);
+    }
+
+    const total = calculateTotal(100, 0.21);
+    console.log(`Total price: ${total}`);
+    ```
+
+    ```bash
+    #!/bin/bash
+    # Always specify the language for shell scripts too
+    echo "Starting deployment..."
+    docker compose up -d --build
+    echo "Done."
+    ```
+
+
+8. IMAGES
+
+Embed images using ![Alt text](URL).
+
+* Alt text: Briefly describe the image for accessibility.
+* URL: This *must* be a URL to an image hosted *externally*. Do *not* add image files to the guides repository. Optimize images (<300KB suggested).
+
+Example Syntax (in your .md file):
+
+    ![Screenshot showing the final dashboard view with data](https://your-image-host.com/dashboard-final.png)
+
+
+9. VIDEOS (USING HTML EMBED)
+
+Standard Markdown doesn't embed video players. Paste the HTML <iframe> embed code provided by video platforms like YouTube or Vimeo directly into your Markdown file.
+
+* Guidelines: Videos must be *hosted externally*. Ensure the video adds significant value. (Embedding relies on Vibecoders.eu rendering iframe tags).
+
+Example Syntax (in your .md file, using generic iframe structure - get actual code from video platform):
+
+    <div style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; overflow: hidden; max-width: 720px; margin: 1rem 0;">
+      <iframe
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="YOUR_VIDEO_EMBED_URL_HERE"
+        title="A descriptive title for the video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+
+10. BLOCKQUOTES
+
+Use the greater-than symbol (>) at the beginning of a line.
+
+Example Syntax (in your .md file):
+
+    > **Note:** Remember to save your configuration file before restarting the server.
+    > This is crucial for the changes to take effect.
+
+(This would render visually indented or distinct on the website).
+
+
+11. HORIZONTAL RULES
+
+Create a horizontal line using three or more hyphens (---), asterisks (***), or underscores (___) on a line by themselves.
+
+Example Syntax (in your .md file):
+
+    Section 1 content...
+
+    ---
+
+    Section 2 content...
+
+--------------------------------------------------
+
+This covers the most common Markdown formatting. Remember to also consult the main CONTRIBUTING.md file for rules about content scope, front matter, and the submission process!
