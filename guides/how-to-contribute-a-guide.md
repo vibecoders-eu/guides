@@ -59,7 +59,7 @@ function isEU(countryCode) {
 
 Remember, images **must be hosted externally**. Use the `![Alt text](URL)` syntax. Sometimes things get tricky...
 
-![Dog in burning room saying 'This is fine']([https://upload.wikimedia.org/wikipedia/en/9/9f/This_is_fine_meme.jpg](https://en.wikipedia.org/wiki/Gunshow_(webcomic)#/media/File:This_is_fine_from_On_Fire_strip_by_KC_Green.jpg))
+![Dog in burning room saying 'This is fine'](https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/220px-Wikipedia-logo-v2.svg.png)
 *Caption: Just a typical Tuesday in development. (Image via Wikimedia)*
 
 ## Embedding Videos (Carefully!)
