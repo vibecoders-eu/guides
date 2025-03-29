@@ -57,10 +57,10 @@ function isEU(countryCode) {
 
 ## Adding External Images
 
-Remember, images **must be hosted externally**. Use the `![Alt text](URL)` syntax. Sometimes things get tricky...
+Remember, images **must be hosted externally**. Use the `![Alt text](URL)` syntax.
 
-![Dog in burning room saying 'This is fine'](https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/220px-Wikipedia-logo-v2.svg.png)
-*Caption: Just a typical Tuesday in development. (Image via Wikimedia)*
+[![Wikipedia Logo](https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/220px-Wikipedia-logo-v2.svg.png)](https://donate.wikimedia.org)
+*Donate to Wikipedia*
 
 ## Embedding Videos (Carefully!)
 
