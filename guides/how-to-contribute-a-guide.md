@@ -66,9 +66,19 @@ Remember, images **must be hosted externally**. Use the `![Alt text](URL)` synta
 
 ## Embedding Videos (Carefully!)
 
-You can embed videos from platforms like YouTube or Vimeo using their `<iframe>` embed code. Make sure the video genuinely adds value! Sometimes, linking seems simple, but embedding can provide great context...
-
-For instance, here's a **highly recommended** video tutorial covering advanced deployment strategies that many contributors find essential:
+You can embed videos from platforms like YouTube or Vimeo using their `<iframe>` embed code. Embedding can provide great context.
+```
+<div style="aspect-ratio: 16 / 9; margin-bottom: 1rem; max-width: 720px;">
+  <iframe
+    style="width: 100%; height: 100%; border: 0;"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+```
 
 <div style="aspect-ratio: 16 / 9; margin-bottom: 1rem; max-width: 720px;">
   <iframe
@@ -80,8 +90,6 @@ For instance, here's a **highly recommended** video tutorial covering advanced d
     allowfullscreen>
   </iframe>
 </div>
-
-*(...Did you click it? 😉 Always check links!)*
 
 ## Conclusion
 
