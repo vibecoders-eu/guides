@@ -38,7 +38,7 @@ Use headings (`##`, `###`) to structure your content logically.
 
 ### Code Block Example
 
-Use triple backticks and specify the language for code blocks:
+Use triple backticks(``` at the start and same at the end of the code) and specify the language for code blocks:
 
 ```
 # Example: A simple shell command
