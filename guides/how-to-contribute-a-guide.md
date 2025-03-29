@@ -40,27 +40,29 @@ Use headings (`##`, `###`) to structure your content logically.
 
 Use triple backticks and specify the language for code blocks:
 
+```
 # Example: A simple shell command
 echo "Hello from Vibecoders Guides!"
 npm install --save-dev some-package@latest
-
+```
+---
+```
 // Example: JavaScript with comments
 function isEU(countryCode) {
   const euCodes = ['FI', 'DE', 'FR', 'SE', /* ... add more ... */ ];
   return euCodes.includes(countryCode.toUpperCase());
 }
-
+```
 ---
 
 **Part 4: Images, Videos, and Conclusion Sections**
-(Copy everything inside the block below and paste it directly after Part 3)
 
 ## Adding External Images
 
 Remember, images **must be hosted externally**. Use the `![Alt text](URL)` syntax. Sometimes things get tricky...
 
-![Dog in burning room saying 'This is fine'](https://upload.wikimedia.org/wikipedia/en/9/9f/This_is_fine_meme.jpg)
-*Caption: Just a typical Tuesday in development. (Image via Wikimedia Commons)*
+![Dog in burning room saying 'This is fine']([https://upload.wikimedia.org/wikipedia/en/9/9f/This_is_fine_meme.jpg](https://en.wikipedia.org/wiki/Gunshow_(webcomic)#/media/File:This_is_fine_from_On_Fire_strip_by_KC_Green.jpg))
+*Caption: Just a typical Tuesday in development. (Image via Wikimedia)*
 
 ## Embedding Videos (Carefully!)
 
