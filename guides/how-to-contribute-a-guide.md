@@ -57,12 +57,29 @@ function isEU(countryCode) {
 
 ## Adding External Images
 
-Remember, images **must be hosted externally**. Use the `![Alt text](URL)` syntax.
+Remember, images **must be hosted externally** (your own hosting, Imgur, etc.). **Do not add image files directly to this repository.** Optimize images for the web (aim for < 300KB) and always provide meaningful alt text for accessibility.
+
+* **Standard Image Syntax:** Use Markdown's image syntax `![Alt text](URL)`.
+
+    ```markdown
+    ![A descriptive alt text for the image](https://www.google.com/search?q=https://via.placeholder.com/400x200.png%3Ftext%3DYour%2BExternally%2BHosted%2BImage)
+    *Optional Caption: Describe the image briefly.*
+    ```
+
+* **Making an Image a Link:** If you want the image itself to be clickable, linking to a URL (like documentation, a product page, etc.), you wrap the *entire image syntax* within the square brackets `[]` of the standard Markdown link syntax `[](Target URL)`.
+
+    The combined syntax looks like this: `[![Alt text](Image URL)](Target URL)`
+
+    ```markdown
+    Example (Makes the Wikipedia logo link to their donation page):
+
+    [![Wikipedia Logo](https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/220px-Wikipedia-logo-v2.svg.png)](https://donate.wikimedia.org)
+    ```
 
 [![Wikipedia Logo](https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/220px-Wikipedia-logo-v2.svg.png)](https://donate.wikimedia.org)
 *Donate to Wikipedia*
 
-## Embedding Videos (Carefully!)
+## Embedding Videos
 
 You can embed videos from platforms like YouTube or Vimeo using their `<iframe>` embed code. Embedding can provide great context.
 ```
