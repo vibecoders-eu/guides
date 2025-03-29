@@ -26,10 +26,10 @@ For the full submission process details, please always refer to the main [CONTRI
 
 Your guide content goes below the YAML front matter (the section between the `---` lines at the top). Use standard Markdown for text.
 
-* Separate paragraphs with blank lines.
-* Use `_italic_` for *emphasis*.
-* Use `**bold**` for **strong importance**.
-* Use `inline code` for `variableNames` or `commands`.
+* **Paragraphs:** Separate paragraphs with a blank line.
+* **Italics (Emphasis):** To make text *italic*, wrap it in single underscores (`_like this_`) or single asterisks (`*like this*`).
+* **Bold (Strong Importance):** To make text **bold**, wrap it in double asterisks (`**like this**`) or double underscores (`__like this__`).
+* **Inline Code:** To format short code snippets, commands, variable names, or filenames `inline` within your text, wrap them in single backticks ( `` ` `` ), for example: `npm install`. This usually renders in a monospace font.
 
 
 ## Structure with Headings
@@ -94,3 +94,5 @@ You can embed videos from platforms like YouTube or Vimeo using their `<iframe>`
 ## Conclusion
 
 This guide demonstrated the basic formatting elements. Refer to the `CONTRIBUTING.md` and potentially a more detailed Markdown formatting guide (like `MARKDOWN_FORMATTING_GUIDE.txt` or `.md`) for comprehensive details. We look forward to your contributions!
+
+## That's a Wrap!
