@@ -29,8 +29,6 @@ Your guide content goes below the YAML front matter (the section between the `--
 * **Paragraphs:** Separate paragraphs with a blank line.
 * **Italics (Emphasis):** To make text *italic*, wrap it in single underscores (`_like this_`) or single asterisks (`*like this*`).
 * **Bold (Strong Importance):** To make text **bold**, wrap it in double asterisks (`**like this**`) or double underscores (`__like this__`).
-* **Inline Code:** To format short code snippets, commands, variable names, or filenames `inline` within your text, wrap them in single backticks ( `` ` `` ), for example: `npm install`. This usually renders in a monospace font.
-
 
 ## Structure with Headings
 
